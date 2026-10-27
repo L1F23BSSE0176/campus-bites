@@ -27,3 +27,320 @@ nav ul li a {
     color: white;
     text-decoration: none;
 }
+
+/* Shared CSS for Campus Bites */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #343a40;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* ---------- Reset & Base ---------- */
+/* Scoped so it does not affect other pages */
+.deal-body,
+.deal-body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.deal-body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4f4f4;
+  color: #111;
+}
+
+.deal-body a {
+  text-decoration: none;
+}
+
+.deal-body ul {
+  list-style: none;
+}
+
+/* ---------- Logo (footer) ---------- */
+.deal-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+}
+
+.deal-logo-icon {
+  font-size: 26px;
+}
+
+.deal-logo-text b {
+  color: #ff6a1a;
+}
+
+/* ---------- Buttons ---------- */
+.deal-btn {
+  background: #ff6a1a;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.deal-btn:hover {
+  background: #e65a10;
+}
+
+.deal-btn:active {
+  transform: scale(0.97);
+}
+
+.deal-btn-full {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* ---------- Hero ---------- */
+.deal-hero {
+  text-align: center;
+  padding: 60px 20px;
+  color: #fff;
+  background:
+    linear-gradient(rgba(11, 26, 46, 0.85), rgba(11, 26, 46, 0.85)),
+    url("../images/hero-bg.jpg") center / cover no-repeat;
+  background-color: #0b1a2e;
+}
+
+.deal-hero-title {
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.deal-hero-subtitle {
+  font-size: 18px;
+  color: #ddd;
+}
+
+/* ---------- Container & Grid ---------- */
+.deal-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.deal-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+/* ---------- Deal Card ---------- */
+.deal-card {
+  position: relative;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.deal-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
+}
+
+.deal-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #ff6a1a;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 6px;
+  z-index: 2;
+}
+
+.deal-card-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  background: #1c1c1c;
+}
+
+.deal-card-body {
+  padding: 16px;
+}
+
+.deal-card-title {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.deal-card-desc {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.deal-price {
+  margin-bottom: 14px;
+}
+
+.deal-price-new {
+  color: #ff6a1a;
+  font-weight: 700;
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+.deal-price-old {
+  color: #999;
+  text-decoration: line-through;
+  font-size: 13px;
+}
+
+/* ---------- Student Banner ---------- */
+.deal-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 36px;
+  padding: 28px 20px;
+  background: #0b1a2e;
+  border-radius: 12px;
+  color: #fff;
+}
+
+.deal-banner-icon {
+  font-size: 54px;
+}
+
+.deal-banner-title {
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.deal-highlight {
+  color: #ff6a1a;
+}
+
+.deal-banner-sub {
+  font-size: 15px;
+  color: #ddd;
+}
+
+/* ---------- Footer ---------- */
+.deal-footer {
+  background: #0b1a2e;
+  color: #fff;
+  padding: 40px 40px 16px;
+}
+
+.deal-footer-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.deal-footer-tagline {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.deal-footer-heading {
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.deal-footer-list li {
+  margin-bottom: 8px;
+}
+
+.deal-footer-link,
+.deal-footer-item {
+  color: #ccc;
+  font-size: 13px;
+}
+
+.deal-footer-link:hover {
+  color: #ff6a1a;
+}
+
+.deal-footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 14px;
+  font-size: 12px;
+  color: #aaa;
+}
+
+.deal-social {
+  display: flex;
+  gap: 12px;
+}
+
+.deal-social-link {
+  color: #fff;
+  font-size: 14px;
+}
+
+.deal-social-link:hover {
+  color: #ff6a1a;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .deal-hero-title {
+    font-size: 32px;
+  }
+
+  .deal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .deal-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .deal-banner-title {
+    font-size: 22px;
+  }
+
+  .deal-footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
