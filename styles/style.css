@@ -1,3 +1,4 @@
+
 /* Shared CSS for Campus Bites */
 body {
     font-family: Arial, sans-serif;
@@ -1206,4 +1207,130 @@ nav ul li a {
     .about-hero-title {
         font-size: 1.75rem;
     }
-}
+}
+
+/* Shared CSS for Campus Bites */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #343a40;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+.order-page{
+  --order-navy:#0b1c3a;
+  --order-navy-2:#13294f;
+  --order-orange:#ff6a13;
+  --order-orange-d:#e55a0a;
+  --order-bg:#ffffff;
+  --order-soft:#eaf2fb;
+  --order-text:#1b2433;
+  --order-muted:#5d6878;
+  --order-line:#e3e8ef;
+}
+:where(.order-page) *,:where(.order-page) *::before,:where(.order-page) *::after{margin:0;padding:0;box-sizing:border-box}
+html:has(.order-page){scroll-behavior:smooth}
+.order-page{font-family:"Poppins","Segoe UI",Arial,sans-serif;color:var(--order-text);background:var(--order-bg);line-height:1.5}
+:where(.order-page) a{text-decoration:none;color:inherit}
+:where(.order-page) ul{list-style:none}
+.order-page a:focus-visible,.order-page button:focus-visible{outline:3px solid var(--order-orange);outline-offset:3px}
+
+/* ---------- Navbar ---------- */
+.order-navbar{position:absolute;top:0;left:0;right:0;z-index:10;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:16px 5%;background:rgba(11,28,58,.92);flex-wrap:wrap}
+.order-logo{display:flex;align-items:center;gap:10px;color:#fff;font-weight:600;font-size:1.15rem}
+.order-logo svg{width:34px;height:34px}
+.order-nav-links{display:flex;gap:28px;font-size:.85rem;color:#fff}
+.order-nav-links a{padding:6px 0;border-bottom:2px solid transparent;transition:border-color .2s}
+.order-nav-links a:hover,.order-nav-links a.order-active{border-color:var(--order-orange)}
+.order-nav-right{display:flex;align-items:center;gap:18px;color:#fff}
+.order-nav-right svg{width:22px;height:22px}
+.order-btn{display:inline-block;background:var(--order-orange);color:#fff;font-weight:600;font-size:.85rem;padding:10px 20px;border-radius:6px;border:0;cursor:pointer;transition:background .2s}
+.order-btn:hover{background:var(--order-orange-d)}
+
+/* ---------- Page hero ---------- */
+.order-page-hero{position:relative;min-height:280px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#fff;padding:110px 5% 50px;
+  background:linear-gradient(rgba(11,28,58,.78),rgba(11,28,58,.78)),
+  radial-gradient(circle at 20% 30%,#7a4a1d 0,transparent 40%),
+  radial-gradient(circle at 80% 70%,#3d5a2a 0,transparent 45%),#1a2438}
+.order-page-hero h1{font-size:2.6rem;font-weight:600;margin-bottom:6px}
+.order-page-hero p{font-size:1.1rem;opacity:.95}
+
+/* ---------- Steps ---------- */
+.order-steps-section{padding:70px 5% 50px;max-width:1200px;margin:0 auto}
+.order-steps{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+.order-step{flex:1;text-align:center;padding:0 14px;position:relative}
+.order-icon-box{position:relative;width:110px;height:110px;margin:0 auto 18px;background:#f5f8fc;border:1px solid var(--order-line);border-radius:14px;display:grid;place-items:center}
+.order-icon-box svg{width:56px;height:56px;stroke:var(--order-navy);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.order-badge{position:absolute;top:-12px;left:-12px;width:34px;height:34px;border-radius:50%;background:var(--order-orange);color:#fff;font-weight:700;display:grid;place-items:center;border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.2)}
+.order-step h3{font-size:1.05rem;color:var(--order-navy);margin-bottom:6px}
+.order-step p{font-size:.85rem;color:var(--order-muted);max-width:210px;margin:0 auto}
+.order-arrow{align-self:center;margin-top:-60px;color:var(--order-navy);font-size:1.6rem;font-weight:700}
+
+/* ---------- Info panel ---------- */
+.order-info-panel{max-width:1100px;margin:20px auto 70px;width:90%;background:var(--order-soft);border:1px solid #d3e2f3;border-radius:12px;display:grid;grid-template-columns:2fr 1fr;overflow:hidden}
+.order-info-panel h4{font-size:1rem;color:var(--order-navy);margin-bottom:18px}
+.order-payments{padding:24px 30px;border-right:1px solid #c5d6ea}
+.order-pay-list{display:flex;align-items:center;justify-content:space-around;gap:20px;flex-wrap:wrap}
+.order-pay{display:flex;flex-direction:column;align-items:center;gap:8px;font-size:.85rem;color:var(--order-navy);text-align:center}
+.order-pay svg{width:42px;height:42px;stroke:var(--order-navy);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.order-cards{display:flex;gap:6px}
+.order-card-chip{width:38px;height:26px;border-radius:4px;display:grid;place-items:center;color:#fff;font-size:.65rem;font-weight:700}
+.order-visa{background:#1a3a8f}
+.order-mc{background:linear-gradient(90deg,#e32b2b 50%,#f5a623 50%)}
+.order-wallet{display:flex;gap:6px}
+.order-wallet span{width:38px;height:26px;border-radius:50%;background:#fff;border:2px solid var(--order-navy);display:grid;place-items:center;font-size:.6rem;font-weight:700;color:var(--order-navy)}
+.order-timing{padding:24px 30px}
+.order-time-box{display:flex;align-items:center;gap:16px;color:var(--order-navy)}
+.order-time-box svg{width:44px;height:44px;stroke:var(--order-navy);fill:none;stroke-width:1.8;stroke-linecap:round}
+.order-time-box strong{display:block;font-size:.95rem}
+.order-time-box span{font-size:.9rem}
+
+/* ---------- Footer ---------- */
+.order-footer{background:var(--order-navy);color:#fff;padding:40px 5% 20px}
+.order-footer-grid{display:grid;grid-template-columns:1.2fr 1fr 1.4fr;gap:30px;max-width:1200px;margin:0 auto}
+.order-footer .order-logo{margin-bottom:8px}
+.order-footer p,.order-footer li,.order-footer a{font-size:.82rem;color:#cfd8e6}
+.order-footer h5{font-size:.85rem;margin-bottom:10px;color:#fff}
+.order-footer li{margin-bottom:6px}
+.order-footer a:hover{color:var(--order-orange)}
+.order-copyright{max-width:1200px;margin:30px auto 0;padding-top:16px;border-top:1px solid rgba(255,255,255,.12);display:flex;justify-content:space-between;align-items:center;font-size:.75rem;color:#aab6c9}
+.order-socials{display:flex;gap:14px}
+.order-socials a{width:26px;height:26px;border:1.5px solid #fff;border-radius:6px;display:grid;place-items:center;font-size:.7rem;font-weight:700;color:#fff}
+.order-socials a:hover{background:var(--order-orange);border-color:var(--order-orange);color:#fff}
+
+/* ---------- Responsive ---------- */
+@media (max-width:900px){
+  .order-nav-links{order:3;width:100%;justify-content:center;gap:18px;flex-wrap:wrap}
+  .order-steps{flex-direction:column;align-items:center;gap:36px}
+  .order-arrow{transform:rotate(90deg);margin:0}
+  .order-info-panel{grid-template-columns:1fr}
+  .order-payments{border-right:0;border-bottom:1px solid #c5d6ea}
+  .order-footer-grid{grid-template-columns:1fr}
+  .order-page-hero{padding-top:150px}
+}
+@media (max-width:520px){
+  .order-page-hero h1{font-size:2rem}
+  .order-copyright{flex-direction:column;gap:12px}
+}
+@media (prefers-reduced-motion:reduce){.order-page *{transition:none!important;scroll-behavior:auto!important}}
