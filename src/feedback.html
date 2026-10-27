@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback & Contact - Campus Bites</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="feedback-page-body">
+
+    <!-- Hero Section -->
+    <section class="feedback-page-hero">
+        <div class="feedback-page-hero-overlay">
+            <h1>Feedback & Contact</h1>
+            <p>We'd love to hear from you!</p>
+        </div>
+    </section>
+
+    <!-- Main Content Section -->
+    <main class="feedback-page-main-container">
+        <div class="feedback-page-content-grid">
+            
+            <!-- Send Us A Message Form -->
+            <div class="feedback-page-form-card">
+                <h2>Send Us a Message</h2>
+                <p class="feedback-page-subtitle">Have any suggestions, complaints or questions? Fill out the form below:</p>
+                
+                <form action="#" method="POST" class="feedback-page-form">
+                    <div class="feedback-page-form-group">
+                        <label for="fullName">Full Name *</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Your name" required>
+                    </div>
+
+                    <div class="feedback-page-form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" placeholder="your.email@ucp.edu.pk" required>
+                    </div>
+
+                    <div class="feedback-page-form-group">
+                        <label for="subject">Subject *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="" disabled selected>Select subject</option>
+                            <option value="feedback">General Feedback</option>
+                            <option value="complaint">Complaint</option>
+                            <option value="suggestion">Suggestion</option>
+                            <option value="food-quality">Food Quality</option>
+                        </select>
+                    </div>
+
+                    <div class="feedback-page-form-group">
+                        <label for="message">Your Message *</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="feedback-page-submit-btn">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Contact Information Sidebar -->
+            <div class="feedback-page-contact-sidebar">
+                <div class="feedback-page-info-card">
+                    <h2>Contact Information</h2>
+                    
+                    <div class="feedback-page-info-item">
+                        <i class="fa-solid fa-phone feedback-page-info-icon"></i>
+                        <div>
+                            <strong>+92 300 1234567</strong>
+                            <p>(Mon - Fri, 8:00 AM - 6:00 PM)</p>
+                        </div>
+                    </div>
+
+                    <div class="feedback-page-info-item">
+                        <i class="fa-solid fa-envelope feedback-page-info-icon"></i>
+                        <div>
+                            <strong>campusbites@ucp.edu.pk</strong>
+                        </div>
+                    </div>
+
+                    <div class="feedback-page-info-item">
+                        <i class="fa-solid fa-location-dot feedback-page-info-icon"></i>
+                        <div>
+                            <strong>UCP, Lahore</strong>
+                        </div>
+                    </div>
+
+                    <div class="feedback-page-follow-us">
+                        <h3>Follow Us</h3>
+                        <div class="feedback-page-social-icons">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Highlight Box -->
+                <div class="feedback-page-banner-box">
+                    <p>Your Feedback Helps Us Improve! <i class="fa-regular fa-face-smile"></i></p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
