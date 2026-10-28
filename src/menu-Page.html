@@ -3,53 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campus Bites | Menu</title>
-    <!-- Linking shared CSS file -->
+    <title>Campus Bites | Our Menu - Delicious Choices</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Shared CSS -->
     <link rel="stylesheet" href="../styles/style.css">
-    <!-- Linking menu-specific CSS file -->
-    <link rel="stylesheet" href="../styles/menu-style.css">
 </head>
 <body>
 
-    <!-- ===== NAVBAR ===== -->
-    <header id="menu-navbar">
-        <div id="menu-navbar-container">
-            <div id="menu-navbar-brand">
-                🍔 <span>Campus Bites</span>
-            </div>
-            <nav id="menu-navbar-nav">
-                <ul id="menu-navbar-list">
-                    <li class="menu-navbar-item"><a href="index.html" class="menu-navbar-link">Home</a></li>
-                    <li class="menu-navbar-item"><a href="menu-Page.html" class="menu-navbar-link menu-navbar-link-active">Menu</a></li>
-                    <li class="menu-navbar-item"><a href="deals.html" class="menu-navbar-link">Order</a></li>
-                    <li class="menu-navbar-item"><a href="order.html" class="menu-navbar-link">Deals</a></li>
-                    <li class="menu-navbar-item"><a href="feedback.html" class="menu-navbar-link">Feedback</a></li>
-                    <li class="menu-navbar-item"><a href="AboutUs.html" class="menu-navbar-link">About US</a></li>
+    <!-- ===== UNIFIED HEADER & NAVBAR ===== -->
+    <header class="cb-header">
+        <div class="cb-header-inner">
+            <!-- Brand Logo -->
+            <a href="index.html" class="cb-logo">
+                <span class="cb-logo-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 0A5.11 5.11 0 0 1 16.59 6 4 4 0 0 1 18 13.87V21H6Z"/>
+                        <line x1="6" y1="17" x2="18" y2="17"/>
+                    </svg>
+                </span>
+                <span class="cb-logo-text">Campus <span class="cb-logo-accent">Bites</span></span>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="cb-nav">
+                <ul class="cb-nav-list">
+                    <li class="cb-nav-item"><a href="index.html" class="cb-nav-link">Home</a></li>
+                    <li class="cb-nav-item"><a href="menu-Page.html" class="cb-nav-link active">Menu</a></li>
+                    <li class="cb-nav-item"><a href="dealPage.html" class="cb-nav-link">Deals</a></li>
+                    <li class="cb-nav-item"><a href="order.html" class="cb-nav-link">How to Order</a></li>
+                    <li class="cb-nav-item"><a href="feedback.html" class="cb-nav-link">Feedback &amp; Contact</a></li>
+                    <li class="cb-nav-item"><a href="about-page.html" class="cb-nav-link">About Us</a></li>
                 </ul>
             </nav>
-            <div id="menu-navbar-cart">
-                🛒 <span id="menu-navbar-cart-count">0</span>
+
+            <!-- Header Actions -->
+            <div class="cb-header-actions">
+                <a href="order.html" class="cb-cart-btn" aria-label="Cart">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="9" cy="21" r="1"/>
+                        <circle cx="20" cy="21" r="1"/>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                    </svg>
+                    <span class="cb-cart-count">0</span>
+                </a>
+                <a href="order.html" class="cb-order-btn">Order Now</a>
             </div>
         </div>
     </header>
 
-    <!-- ===== HERO / BANNER ===== -->
-    <section id="menu-hero">
-        <div id="menu-hero-overlay">
-            <h1 id="menu-hero-title">Our Menu</h1>
-            <p id="menu-hero-subtitle">Delicious choices for every craving</p>
-        </div>
+    <!-- ===== PAGE HERO BANNER ===== -->
+    <section class="cb-page-hero">
+        <h1 class="cb-page-hero-title">Our Menu</h1>
+        <p class="cb-page-hero-subtitle">Delicious choices for every craving</p>
     </section>
 
-    <!-- ===== FILTER TABS ===== -->
+    <!-- ===== CATEGORY FILTER TABS (Pure HTML Jump Links) ===== -->
     <section id="menu-filter">
         <div id="menu-filter-container">
-            <button class="menu-filter-btn menu-filter-btn-active" data-category="all">All</button>
-            <button class="menu-filter-btn" data-category="burgers">Burgers</button>
-            <button class="menu-filter-btn" data-category="wraps">Wraps</button>
-            <button class="menu-filter-btn" data-category="rice">Rice &amp; Biryani</button>
-            <button class="menu-filter-btn" data-category="snacks">Snacks</button>
-            <button class="menu-filter-btn" data-category="drinks">Drinks</button>
+            <a href="#menu-main" class="menu-filter-btn menu-filter-btn-active">All</a>
+            <a href="#menu-section-burgers" class="menu-filter-btn">Burgers</a>
+            <a href="#menu-section-wraps" class="menu-filter-btn">Wraps</a>
+            <a href="#menu-section-rice" class="menu-filter-btn">Rice &amp; Biryani</a>
+            <a href="#menu-section-snacks" class="menu-filter-btn">Snacks</a>
+            <a href="#menu-section-drinks" class="menu-filter-btn">Drinks</a>
         </div>
     </section>
 
@@ -57,330 +76,387 @@
     <main id="menu-main">
 
         <!-- ---- BURGERS SECTION ---- -->
-        <section class="menu-section" id="menu-section-burgers" data-category="burgers">
+        <section class="menu-section" id="menu-section-burgers">
             <div class="menu-section-header">
-                <div class="menu-section-header-left">
+                <div>
                     <h2 class="menu-section-title">Burgers</h2>
                     <p class="menu-section-subtitle">Juicy, fresh and full of flavor</p>
                 </div>
-                <a href="#" class="menu-section-viewall">View All →</a>
+                <a href="#menu-section-burgers" class="menu-section-viewall">View All &rarr;</a>
             </div>
-            <div class="menu-grid" id="menu-grid-burgers">
-
-                <div class="menu-card" id="menu-card-burger-1">
+            <div class="menu-grid">
+                <div class="menu-card">
                     <div class="menu-card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=260&fit=crop" alt="Chicken Burger" class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&h=300&fit=crop" alt="Chicken Burger" class="menu-card-img">
                     </div>
                     <div class="menu-card-body">
                         <h3 class="menu-card-name">Chicken Burger</h3>
                         <p class="menu-card-price">PKR 250</p>
-                        <button class="menu-card-btn">Add to Cart</button>
+                        <a href="order.html" class="menu-card-btn">Add to Cart</a>
                     </div>
                 </div>
 
-                <div class="menu-card" id="menu-card-burger-2">
+                <div class="menu-card">
                     <div class="menu-card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=400&h=260&fit=crop" alt="Beef Burger" class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=500&h=300&fit=crop" alt="Beef Burger" class="menu-card-img">
                     </div>
                     <div class="menu-card-body">
                         <h3 class="menu-card-name">Beef Burger</h3>
                         <p class="menu-card-price">PKR 300</p>
-                        <button class="menu-card-btn">Add to Cart</button>
+                        <a href="order.html" class="menu-card-btn">Add to Cart</a>
                     </div>
                 </div>
 
-                <div class="menu-card" id="menu-card-burger-3">
+                <div class="menu-card">
                     <div class="menu-card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=400&h=260&fit=crop" alt="Zinger Burger" class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=500&h=300&fit=crop" alt="Zinger Burger" class="menu-card-img">
                     </div>
                     <div class="menu-card-body">
                         <h3 class="menu-card-name">Zinger Burger</h3>
                         <p class="menu-card-price">PKR 320</p>
-                        <button class="menu-card-btn">Add to Cart</button>
+                        <a href="order.html" class="menu-card-btn">Add to Cart</a>
                     </div>
                 </div>
 
-                <div class="menu-card menu-card-featured" id="menu-card-burger-4">
+                <div class="menu-card">
                     <div class="menu-card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=400&h=260&fit=crop" alt="BBQ Burger" class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=500&h=300&fit=crop" alt="BBQ Burger" class="menu-card-img">
                         <span class="menu-card-badge">Popular</span>
                     </div>
                     <div class="menu-card-body">
                         <h3 class="menu-card-name">BBQ Burger</h3>
                         <p class="menu-card-price">PKR 350</p>
-                        <button class="menu-card-btn menu-card-btn-order">Order Now</button>
+                        <a href="order.html" class="menu-card-btn">Add to Cart</a>
                     </div>
                 </div>
-
             </div>
         </section>
 
         <!-- ---- WRAPS SECTION ---- -->
-        <section class="menu-section" id="menu-section-wraps" data-category="wraps">
+        <section class="menu-section" id="menu-section-wraps">
             <div class="menu-section-header">
-                <div class="menu-section-header-left">
+                <div>
                     <h2 class="menu-section-title">Wraps</h2>
                     <p class="menu-section-subtitle">Quick, tasty and satisfying</p>
                 </div>
-                <a href="#" class="menu-section-viewall">View All →</a>
+                <a href="#menu-section-wraps" class="menu-section-viewall">View All &rarr;</a>
             </div>
-            <div class="menu-grid" id="menu-grid-wraps">
-
-                <div class="menu-card" id="menu-card-wrap-1">
+            <div class="menu-grid">
+                <div class="menu-card">
                     <div class="menu-card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=400&h=260&fit=crop" alt="Chicken Shawarma Roll" class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=500&h=300&fit=crop" alt="Chicken Shawarma Roll" class="menu-card-img">
                     </div>
                     <div class="menu-card-body">
                         <h3 class="menu-card-name">Chicken Shawarma Roll</h3>
                         <p class="menu-card-price">PKR 250</p>
-                        <button class="menu-card-btn">Add to Cart</button>
+                        <a href="order.html" class="menu-card-btn">Add to Cart</a>
                     </div>
                 </div>
 
-                <div class="menu-card" id="menu-card-wrap-2">
+                <div class="menu-card">
                     <div class="menu-card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=400&h=260&fit=crop" alt="Beef Wrap" class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=500&h=300&fit=crop" alt="Beef Wrap" class="menu-card-img">
                     </div>
                     <div class="menu-card-body">
                         <h3 class="menu-card-name">Beef Wrap</h3>
-                        <p class="menu-card-price">PKR 200</p>
-                        <button class="menu-card-btn">Add to Cart</button>
+                        <p class="menu-card-price">PKR 260</p>
+                        <a href="order.html" class="menu-card-btn">Add to Cart</a>
                     </div>
                 </div>
 
-                <div class="menu-card" id="menu-card-wrap-3">
+                <div class="menu-card">
                     <div class="menu-card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400&h=260&fit=crop" alt="Falafel Wrap (Veg)" class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=500&h=300&fit=crop" alt="Falafel Wrap (Veg)" class="menu-card-img">
                     </div>
                     <div class="menu-card-body">
                         <h3 class="menu-card-name">Falafel Wrap (Veg)</h3>
                         <p class="menu-card-price">PKR 220</p>
-                        <button class="menu-card-btn">Add to Cart</button>
+                        <a href="order.html" class="menu-card-btn">Add to Cart</a>
                     </div>
                 </div>
 
-                <div class="menu-card" id="menu-card-wrap-4">
+                <div class="menu-card">
                     <div class="menu-card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1611250188496-e966043a0629?w=400&h=260&fit=crop" alt="Tikka Wrap" class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1611250188496-e966043a0629?w=500&h=300&fit=crop" alt="Tikka Wrap" class="menu-card-img">
                     </div>
                     <div class="menu-card-body">
                         <h3 class="menu-card-name">Tikka Wrap</h3>
                         <p class="menu-card-price">PKR 260</p>
-                        <button class="menu-card-btn">Add to Cart</button>
+                        <a href="order.html" class="menu-card-btn">Add to Cart</a>
                     </div>
                 </div>
-
             </div>
         </section>
 
         <!-- ---- RICE & BIRYANI SECTION ---- -->
-        <section class="menu-section" id="menu-section-rice" data-category="rice">
+        <section class="menu-section" id="menu-section-rice">
             <div class="menu-section-header">
-                <div class="menu-section-header-left">
+                <div>
                     <h2 class="menu-section-title">Rice &amp; Biryani</h2>
                     <p class="menu-section-subtitle">Traditional taste, always a favorite</p>
                 </div>
-                <a href="#" class="menu-section-viewall">View All →</a>
+                <a href="#menu-section-rice" class="menu-section-viewall">View All &rarr;</a>
             </div>
-            <div class="menu-grid" id="menu-grid-rice">
-
-                <div class="menu-card" id="menu-card-rice-1">
+            <div class="menu-grid">
+                <div class="menu-card">
                     <div class="menu-card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=400&h=260&fit=crop" alt="Chicken Biryani" class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=500&h=300&fit=crop" alt="Chicken Biryani" class="menu-card-img">
                     </div>
                     <div class="menu-card-body">
                         <h3 class="menu-card-name">Chicken Biryani</h3>
                         <p class="menu-card-price">PKR 280</p>
-                        <button class="menu-card-btn">Add to Cart</button>
+                        <a href="order.html" class="menu-card-btn">Add to Cart</a>
                     </div>
                 </div>
 
-                <div class="menu-card" id="menu-card-rice-2">
+                <div class="menu-card">
                     <div class="menu-card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=400&h=260&fit=crop" alt="Beef Biryani" class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=500&h=300&fit=crop" alt="Beef Biryani" class="menu-card-img">
                     </div>
                     <div class="menu-card-body">
                         <h3 class="menu-card-name">Beef Biryani</h3>
                         <p class="menu-card-price">PKR 320</p>
-                        <button class="menu-card-btn">Add to Cart</button>
+                        <a href="order.html" class="menu-card-btn">Add to Cart</a>
                     </div>
                 </div>
 
-                <div class="menu-card" id="menu-card-rice-3">
+                <div class="menu-card">
                     <div class="menu-card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=400&h=260&fit=crop" alt="Fried Rice" class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=500&h=300&fit=crop" alt="Fried Rice" class="menu-card-img">
                     </div>
                     <div class="menu-card-body">
                         <h3 class="menu-card-name">Fried Rice</h3>
-                        <p class="menu-card-price">PKR 250</p>
-                        <button class="menu-card-btn">Add to Cart</button>
+                        <p class="menu-card-price">PKR 260</p>
+                        <a href="order.html" class="menu-card-btn">Add to Cart</a>
                     </div>
                 </div>
 
-                <div class="menu-card" id="menu-card-rice-4">
+                <div class="menu-card">
                     <div class="menu-card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1574653853027-5382a3d23a15?w=400&h=260&fit=crop" alt="Kabuli Pulao" class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1574653853027-5382a3d23a15?w=500&h=300&fit=crop" alt="Kabuli Pulao" class="menu-card-img">
                     </div>
                     <div class="menu-card-body">
                         <h3 class="menu-card-name">Kabuli Pulao</h3>
                         <p class="menu-card-price">PKR 300</p>
-                        <button class="menu-card-btn">Add to Cart</button>
+                        <a href="order.html" class="menu-card-btn">Add to Cart</a>
                     </div>
                 </div>
-
             </div>
         </section>
 
         <!-- ---- SNACKS SECTION ---- -->
-        <section class="menu-section" id="menu-section-snacks" data-category="snacks">
+        <section class="menu-section" id="menu-section-snacks">
             <div class="menu-section-header">
-                <div class="menu-section-header-left">
+                <div>
                     <h2 class="menu-section-title">Snacks</h2>
                     <p class="menu-section-subtitle">Light bites to keep you going</p>
                 </div>
-                <a href="#" class="menu-section-viewall">View All →</a>
+                <a href="#menu-section-snacks" class="menu-section-viewall">View All &rarr;</a>
             </div>
-            <div class="menu-grid" id="menu-grid-snacks">
-
-                <div class="menu-card" id="menu-card-snack-1">
+            <div class="menu-grid">
+                <div class="menu-card">
                     <div class="menu-card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=400&h=260&fit=crop" alt="French Fries" class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=500&h=300&fit=crop" alt="French Fries" class="menu-card-img">
                     </div>
                     <div class="menu-card-body">
                         <h3 class="menu-card-name">French Fries</h3>
                         <p class="menu-card-price">PKR 120</p>
-                        <button class="menu-card-btn">Add to Cart</button>
+                        <a href="order.html" class="menu-card-btn">Add to Cart</a>
                     </div>
                 </div>
 
-                <div class="menu-card" id="menu-card-snack-2">
+                <div class="menu-card">
                     <div class="menu-card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=400&h=260&fit=crop" alt="Chicken Wings" class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=500&h=300&fit=crop" alt="Chicken Wings" class="menu-card-img">
                     </div>
                     <div class="menu-card-body">
                         <h3 class="menu-card-name">Chicken Wings</h3>
                         <p class="menu-card-price">PKR 200</p>
-                        <button class="menu-card-btn">Add to Cart</button>
+                        <a href="order.html" class="menu-card-btn">Add to Cart</a>
                     </div>
                 </div>
 
-                <div class="menu-card" id="menu-card-snack-3">
+                <div class="menu-card">
                     <div class="menu-card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1548340748-6d2b7d7da280?w=400&h=260&fit=crop" alt="Samosa" class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1548340748-6d2b7d7da280?w=500&h=300&fit=crop" alt="Samosa" class="menu-card-img">
                     </div>
                     <div class="menu-card-body">
                         <h3 class="menu-card-name">Samosa (2 pcs)</h3>
                         <p class="menu-card-price">PKR 80</p>
-                        <button class="menu-card-btn">Add to Cart</button>
+                        <a href="order.html" class="menu-card-btn">Add to Cart</a>
                     </div>
                 </div>
 
-                <div class="menu-card" id="menu-card-snack-4">
+                <div class="menu-card">
                     <div class="menu-card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1541014741259-de529411b96a?w=400&h=260&fit=crop" alt="Spring Rolls" class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1541014741259-de529411b96a?w=500&h=300&fit=crop" alt="Spring Rolls" class="menu-card-img">
                     </div>
                     <div class="menu-card-body">
                         <h3 class="menu-card-name">Spring Rolls</h3>
                         <p class="menu-card-price">PKR 150</p>
-                        <button class="menu-card-btn">Add to Cart</button>
+                        <a href="order.html" class="menu-card-btn">Add to Cart</a>
                     </div>
                 </div>
-
             </div>
         </section>
 
         <!-- ---- DRINKS SECTION ---- -->
-        <section class="menu-section" id="menu-section-drinks" data-category="drinks">
+        <section class="menu-section" id="menu-section-drinks">
             <div class="menu-section-header">
-                <div class="menu-section-header-left">
+                <div>
                     <h2 class="menu-section-title">Drinks</h2>
                     <p class="menu-section-subtitle">Refreshing sips to complete your meal</p>
                 </div>
-                <a href="#" class="menu-section-viewall">View All →</a>
+                <a href="#menu-section-drinks" class="menu-section-viewall">View All &rarr;</a>
             </div>
-            <div class="menu-grid" id="menu-grid-drinks">
-
-                <div class="menu-card" id="menu-card-drink-1">
+            <div class="menu-grid">
+                <div class="menu-card">
                     <div class="menu-card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1596803244618-8dea4afc7817?w=400&h=260&fit=crop" alt="Mango Lassi" class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1596803244618-8dea4afc7817?w=500&h=300&fit=crop" alt="Mango Lassi" class="menu-card-img">
                     </div>
                     <div class="menu-card-body">
                         <h3 class="menu-card-name">Mango Lassi</h3>
                         <p class="menu-card-price">PKR 100</p>
-                        <button class="menu-card-btn">Add to Cart</button>
+                        <a href="order.html" class="menu-card-btn">Add to Cart</a>
                     </div>
                 </div>
 
-                <div class="menu-card" id="menu-card-drink-2">
+                <div class="menu-card">
                     <div class="menu-card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&h=260&fit=crop" alt="Cold Coffee" class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=500&h=300&fit=crop" alt="Cold Coffee" class="menu-card-img">
                     </div>
                     <div class="menu-card-body">
                         <h3 class="menu-card-name">Cold Coffee</h3>
                         <p class="menu-card-price">PKR 150</p>
-                        <button class="menu-card-btn">Add to Cart</button>
+                        <a href="order.html" class="menu-card-btn">Add to Cart</a>
                     </div>
                 </div>
 
-                <div class="menu-card" id="menu-card-drink-3">
+                <div class="menu-card">
                     <div class="menu-card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=400&h=260&fit=crop" alt="Fresh Juice" class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500&h=300&fit=crop" alt="Fresh Juice" class="menu-card-img">
                     </div>
                     <div class="menu-card-body">
                         <h3 class="menu-card-name">Fresh Juice</h3>
                         <p class="menu-card-price">PKR 120</p>
-                        <button class="menu-card-btn">Add to Cart</button>
+                        <a href="order.html" class="menu-card-btn">Add to Cart</a>
                     </div>
                 </div>
 
-                <div class="menu-card" id="menu-card-drink-4">
+                <div class="menu-card">
                     <div class="menu-card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=400&h=260&fit=crop" alt="Soft Drink" class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=500&h=300&fit=crop" alt="Soft Drink" class="menu-card-img">
                     </div>
                     <div class="menu-card-body">
                         <h3 class="menu-card-name">Soft Drink</h3>
                         <p class="menu-card-price">PKR 80</p>
-                        <button class="menu-card-btn">Add to Cart</button>
+                        <a href="order.html" class="menu-card-btn">Add to Cart</a>
                     </div>
                 </div>
-
             </div>
         </section>
 
     </main>
 
-    <!-- ===== FOOTER ===== -->
-    <footer id="menu-footer">
-        <div id="menu-footer-container">
-            <p id="menu-footer-text">&copy; 2024 Campus Bites. All rights reserved.</p>
+    <!-- ===== UNIFIED FOOTER ===== -->
+    <footer class="cb-footer">
+        <div class="cb-footer-container">
+            <div class="cb-footer-top">
+                <!-- Col 1: Brand Info -->
+                <div class="cb-footer-col">
+                    <div class="cb-footer-brand-title">
+                        <span class="cb-logo-badge">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 0A5.11 5.11 0 0 1 16.59 6 4 4 0 0 1 18 13.87V21H6Z"/>
+                                <line x1="6" y1="17" x2="18" y2="17"/>
+                            </svg>
+                        </span>
+                        <span>Campus <span class="cb-logo-accent">Bites</span></span>
+                    </div>
+                    <p class="cb-footer-brand-p">Good Food Fuels Great Ideas</p>
+                    <p class="cb-footer-brand-sub">Fresh, delicious and affordable meals &mdash; right here at your university cafeteria.</p>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div class="cb-footer-col">
+                    <h4 class="cb-footer-heading">Quick Links</h4>
+                    <ul class="cb-footer-links-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu-Page.html">Menu</a></li>
+                        <li><a href="dealPage.html">Deals</a></li>
+                        <li><a href="order.html">How to Order</a></li>
+                        <li><a href="feedback.html">Feedback &amp; Contact</a></li>
+                        <li><a href="about-page.html">About Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Contact Us -->
+                <div class="cb-footer-col">
+                    <h4 class="cb-footer-heading">Contact Us</h4>
+                    <ul class="cb-footer-contact-list">
+                        <li class="cb-footer-contact-item">
+                            <svg class="cb-footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            <div>
+                                <strong>+92 300 1234567</strong>
+                                <div style="font-size:0.82rem; color:#94a3b8;">(Mon &ndash; Fri, 8:00 AM &ndash; 6:00 PM)</div>
+                            </div>
+                        </li>
+                        <li class="cb-footer-contact-item">
+                            <svg class="cb-footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <span>campusbites@ucp.edu.pk</span>
+                        </li>
+                        <li class="cb-footer-contact-item">
+                            <svg class="cb-footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <span>UCP, Lahore</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom Bar -->
+            <div class="cb-footer-bottom">
+                <p>&copy; 2026 Campus Bites. All rights reserved.</p>
+                <div class="cb-footer-social">
+                    <!-- Facebook -->
+                    <a href="#" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                        </svg>
+                    </a>
+                    <!-- Instagram -->
+                    <a href="#" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                        </svg>
+                    </a>
+                    <!-- X / Twitter -->
+                    <a href="#" aria-label="X Twitter">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4l11.733 16h4.267l-11.733 -16z"/>
+                            <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/>
+                        </svg>
+                    </a>
+                    <!-- YouTube -->
+                    <a href="#" aria-label="YouTube">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
+                            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
         </div>
     </footer>
 
-    <!-- ===== FILTER SCRIPT ===== -->
-    <script>
-        // Filter buttons functionality
-        const menuFilterBtns = document.querySelectorAll('.menu-filter-btn');
-        const menuSections   = document.querySelectorAll('.menu-section');
-
-        menuFilterBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                // Active button style
-                menuFilterBtns.forEach(b => b.classList.remove('menu-filter-btn-active'));
-                btn.classList.add('menu-filter-btn-active');
-
-                const category = btn.getAttribute('data-category');
-
-                menuSections.forEach(section => {
-                    if (category === 'all' || section.getAttribute('data-category') === category) {
-                        section.style.display = 'block';
-                    } else {
-                        section.style.display = 'none';
-                    }
-                });
-            });
-        });
-    </script>
-
 </body>
 </html>
-
