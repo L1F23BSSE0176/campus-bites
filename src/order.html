@@ -1,165 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>How to Order | Campus Bites</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Bites | How to Order - Quick, Easy & Convenient</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Shared CSS -->
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
-<body class="order-page">
+<body>
 
-  <!-- Navbar -->
-  <header class="order-navbar">
-    <a href="index.html" class="order-logo">
-      <svg viewBox="0 0 40 40" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a6 6 0 0 1 1-11 7 7 0 0 1 14 0 6 6 0 0 1 1 11z"/><path d="M12 22v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-9"/><path d="M12 27h16"/></svg>
-      Campus Bites
-    </a>
-    <nav class="order-nav-links" aria-label="Main">
-      <a href="index.html">Home</a>
-      <a href="menu.html">Menu</a>
-      <a href="deals.html">Deals</a>
-      <a href="how-to-order.html" class="order-active" aria-current="page">How to Order</a>
-      <a href="feedback.html">Feedback &amp; Contact</a>
-    </nav>
-    <div class="order-nav-right">
-      <a href="#" aria-label="Cart">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6"/></svg>
-      </a>
-      <a href="menu.html" class="order-btn">Order Now</a>
-    </div>
-  </header>
+    <!-- ===== UNIFIED HEADER & NAVBAR ===== -->
+    <header class="cb-header">
+        <div class="cb-header-inner">
+            <!-- Brand Logo -->
+            <a href="index.html" class="cb-logo">
+                <span class="cb-logo-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 0A5.11 5.11 0 0 1 16.59 6 4 4 0 0 1 18 13.87V21H6Z"/>
+                        <line x1="6" y1="17" x2="18" y2="17"/>
+                    </svg>
+                </span>
+                <span class="cb-logo-text">Campus <span class="cb-logo-accent">Bites</span></span>
+            </a>
 
-  <!-- Hero -->
-  <section class="order-page-hero">
-    <h1>How to Order</h1>
-    <p>It's quick, easy and convenient!</p>
-  </section>
+            <!-- Navigation Links -->
+            <nav class="cb-nav">
+                <ul class="cb-nav-list">
+                    <li class="cb-nav-item"><a href="index.html" class="cb-nav-link">Home</a></li>
+                    <li class="cb-nav-item"><a href="menu-Page.html" class="cb-nav-link">Menu</a></li>
+                    <li class="cb-nav-item"><a href="dealPage.html" class="cb-nav-link">Deals</a></li>
+                    <li class="cb-nav-item"><a href="order.html" class="cb-nav-link active">How to Order</a></li>
+                    <li class="cb-nav-item"><a href="feedback.html" class="cb-nav-link">Feedback &amp; Contact</a></li>
+                    <li class="cb-nav-item"><a href="about-page.html" class="cb-nav-link">About Us</a></li>
+                </ul>
+            </nav>
 
-  <!-- Steps -->
-  <main>
-    <section class="order-steps-section" aria-label="Ordering steps">
-      <div class="order-steps">
+            <!-- Header Actions -->
+            <div class="cb-header-actions">
+                <a href="order.html" class="cb-cart-btn" aria-label="Cart">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="9" cy="21" r="1"/>
+                        <circle cx="20" cy="21" r="1"/>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                    </svg>
+                    <span class="cb-cart-count">0</span>
+                </a>
+                <a href="order.html" class="cb-order-btn">Order Now</a>
+            </div>
+        </div>
+    </header>
 
-        <article class="order-step">
-          <div class="order-icon-box">
-            <span class="order-badge">1</span>
-            <svg viewBox="0 0 48 48"><rect x="11" y="7" width="26" height="34" rx="3"/><path d="M18 5h12v6H18z"/><path d="M17 20h14M17 27h14M17 34h8"/></svg>
-          </div>
-          <h3>Browse Menu</h3>
-          <p>Check out our delicious menu and choose your favorite items.</p>
-        </article>
-
-        <div class="order-arrow" aria-hidden="true">&rsaquo;</div>
-
-        <article class="order-step">
-          <div class="order-icon-box">
-            <span class="order-badge">2</span>
-            <svg viewBox="0 0 48 48"><circle cx="18" cy="40" r="2.5"/><circle cx="36" cy="40" r="2.5"/><path d="M4 6h6l5 24a3 3 0 0 0 3 2.4h17a3 3 0 0 0 3-2.3L41 14H12"/><path d="M20 20h14"/></svg>
-          </div>
-          <h3>Add to Cart</h3>
-          <p>Select items and add them to your cart.</p>
-        </article>
-
-        <div class="order-arrow" aria-hidden="true">&rsaquo;</div>
-
-        <article class="order-step">
-          <div class="order-icon-box">
-            <span class="order-badge">3</span>
-            <svg viewBox="0 0 48 48"><rect x="5" y="11" width="38" height="26" rx="4"/><path d="M5 19h38M12 30h8"/></svg>
-          </div>
-          <h3>Make Payment</h3>
-          <p>Pay securely via cash, card or mobile wallet.</p>
-        </article>
-
-        <div class="order-arrow" aria-hidden="true">&rsaquo;</div>
-
-        <article class="order-step">
-          <div class="order-icon-box">
-            <span class="order-badge">4</span>
-            <svg viewBox="0 0 48 48"><path d="M10 16h28l-2 24H12z"/><path d="M17 16v-3a7 7 0 0 1 14 0v3"/><path d="M19 28l4 4 7-8"/></svg>
-          </div>
-          <h3>Pick Up Your Order</h3>
-          <p>Get your order from the cafeteria counter at your selected time.</p>
-        </article>
-
-      </div>
+    <!-- ===== PAGE HERO BANNER ===== -->
+    <section class="cb-page-hero">
+        <h1 class="cb-page-hero-title">How to Order</h1>
+        <p class="cb-page-hero-subtitle">It's quick, easy and convenient!</p>
     </section>
 
-    <!-- Payment methods & timing -->
-    <section class="order-info-panel">
-      <div class="order-payments">
-        <h4>Payment Methods</h4>
-        <div class="order-pay-list">
-          <div class="order-pay">
-            <svg viewBox="0 0 48 48"><path d="M8 28c4-2 10-2 14 1l8-4a3 3 0 0 1 3 5l-12 7H8z"/><circle cx="30" cy="14" r="7"/><path d="M30 11v6"/></svg>
-            Cash on Pickup
-          </div>
-          <div class="order-pay">
-            <div class="order-cards"><span class="order-card-chip order-visa">VISA</span><span class="order-card-chip order-mc"></span></div>
-            Card Payment
-          </div>
-          <div class="order-pay">
-            <div class="order-wallet"><span>JC</span><span>EP</span></div>
-            JazzCash / Easypaisa
-          </div>
-        </div>
-      </div>
+    <!-- ===== STEPS SECTION ===== -->
+    <main>
+        <section class="order-steps-section">
+            <div class="order-steps">
 
-      <div class="order-timing">
-        <h4>Order Timing</h4>
-        <div class="order-time-box">
-          <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="18"/><path d="M24 12v13l8 5"/></svg>
-          <div>
-            <strong>Mon - Fri</strong>
-            <span>8:00 AM - 6:00 PM</span>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+                <!-- Step 1: Browse Menu -->
+                <article class="order-step">
+                    <div class="order-icon-box">
+                        <span class="order-badge">1</span>
+                        <svg viewBox="0 0 24 24">
+                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/>
+                            <rect x="8" y="2" width="8" height="4" rx="1" ry="1"/>
+                            <path d="M9 12h6M9 16h6"/>
+                        </svg>
+                    </div>
+                    <h3>Browse Menu</h3>
+                    <p>Check out our delicious menu and choose your favorite items.</p>
+                </article>
 
-  <!-- Footer -->
-  <footer class="order-footer">
-    <div class="order-footer-grid">
-      <div>
-        <a href="index.html" class="order-logo">
-          <svg viewBox="0 0 40 40" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a6 6 0 0 1 1-11 7 7 0 0 1 14 0 6 6 0 0 1 1 11z"/><path d="M12 22v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-9"/><path d="M12 27h16"/></svg>
-          Campus Bites
-        </a>
-        <p>Good Food Fuels Great Ideas</p>
-      </div>
-      <div>
-        <h5>Quick Links</h5>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="deals.html">Deals</a></li>
-          <li><a href="how-to-order.html">How to Order</a></li>
-          <li><a href="feedback.html">Feedback &amp; Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <h5>Contact Us</h5>
-        <ul>
-          <li>+92 300 1234567</li>
-          <li>campusbites@ucp.edu.pk</li>
-          <li>UCP, Lahore</li>
-        </ul>
-      </div>
-    </div>
-    <div class="order-copyright">
-      <span>&copy; 2025 Campus Bites. All rights reserved.</span>
-      <div class="order-socials">
-        <a href="#" aria-label="Facebook">f</a>
-        <a href="#" aria-label="Instagram">in</a>
-        <a href="#" aria-label="X">X</a>
-        <a href="#" aria-label="YouTube">&#9654;</a>
-      </div>
-    </div>
-  </footer>
+                <div class="order-arrow" aria-hidden="true">&rsaquo;</div>
+
+                <!-- Step 2: Add to Cart -->
+                <article class="order-step">
+                    <div class="order-icon-box">
+                        <span class="order-badge">2</span>
+                        <svg viewBox="0 0 24 24">
+                            <circle cx="9" cy="21" r="1"/>
+                            <circle cx="20" cy="21" r="1"/>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                        </svg>
+                    </div>
+                    <h3>Add to Cart</h3>
+                    <p>Select items and add them to your cart.</p>
+                </article>
+
+                <div class="order-arrow" aria-hidden="true">&rsaquo;</div>
+
+                <!-- Step 3: Make Payment -->
+                <article class="order-step">
+                    <div class="order-icon-box">
+                        <span class="order-badge">3</span>
+                        <svg viewBox="0 0 24 24">
+                            <rect x="2" y="5" width="20" height="14" rx="2"/>
+                            <line x1="2" y1="10" x2="22" y2="10"/>
+                        </svg>
+                    </div>
+                    <h3>Make Payment</h3>
+                    <p>Pay securely via cash, card or mobile wallet.</p>
+                </article>
+
+                <div class="order-arrow" aria-hidden="true">&rsaquo;</div>
+
+                <!-- Step 4: Pick Up Your Order -->
+                <article class="order-step">
+                    <div class="order-icon-box">
+                        <span class="order-badge">4</span>
+                        <svg viewBox="0 0 24 24">
+                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+                            <line x1="3" y1="6" x2="21" y2="6"/>
+                            <path d="M16 10a4 4 0 0 1-8 0"/>
+                        </svg>
+                    </div>
+                    <h3>Pick Up Your Order</h3>
+                    <p>Get your order from the cafeteria counter at your selected time.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ===== INFO PANEL: PAYMENT METHODS & TIMING ===== -->
+        <section class="order-info-panel">
+            <!-- Payment Methods -->
+            <div class="order-payments">
+                <h4>Payment Methods</h4>
+                <div class="order-pay-list">
+                    <div class="order-pay">
+                        <svg viewBox="0 0 24 24">
+                            <rect x="2" y="6" width="20" height="12" rx="2"/>
+                            <circle cx="12" cy="12" r="2"/>
+                            <path d="M6 12h.01M18 12h.01"/>
+                        </svg>
+                        <span>Cash on Pickup</span>
+                    </div>
+
+                    <div class="order-pay">
+                        <div class="order-cards">
+                            <span class="order-card-chip order-visa">VISA</span>
+                            <span class="order-card-chip order-mc">MC</span>
+                        </div>
+                        <span>Card Payment</span>
+                    </div>
+
+                    <div class="order-pay">
+                        <div class="order-wallet">
+                            <span>JazzCash</span>
+                            <span>Easypaisa</span>
+                        </div>
+                        <span>JazzCash / Easypaisa</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Order Timing -->
+            <div class="order-timing">
+                <h4>Order Timing</h4>
+                <div class="order-time-box">
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="10"/>
+                        <polyline points="12 6 12 12 16 14"/>
+                    </svg>
+                    <div>
+                        <strong>Mon - Fri</strong>
+                        <span>8:00 AM - 6:00 PM</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== UNIFIED FOOTER ===== -->
+    <footer class="cb-footer">
+        <div class="cb-footer-container">
+            <div class="cb-footer-top">
+                <!-- Col 1: Brand Info -->
+                <div class="cb-footer-col">
+                    <div class="cb-footer-brand-title">
+                        <span class="cb-logo-badge">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 0A5.11 5.11 0 0 1 16.59 6 4 4 0 0 1 18 13.87V21H6Z"/>
+                                <line x1="6" y1="17" x2="18" y2="17"/>
+                            </svg>
+                        </span>
+                        <span>Campus <span class="cb-logo-accent">Bites</span></span>
+                    </div>
+                    <p class="cb-footer-brand-p">Good Food Fuels Great Ideas</p>
+                    <p class="cb-footer-brand-sub">Fresh, delicious and affordable meals &mdash; right here at your university cafeteria.</p>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div class="cb-footer-col">
+                    <h4 class="cb-footer-heading">Quick Links</h4>
+                    <ul class="cb-footer-links-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu-Page.html">Menu</a></li>
+                        <li><a href="dealPage.html">Deals</a></li>
+                        <li><a href="order.html">How to Order</a></li>
+                        <li><a href="feedback.html">Feedback &amp; Contact</a></li>
+                        <li><a href="about-page.html">About Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Contact Us -->
+                <div class="cb-footer-col">
+                    <h4 class="cb-footer-heading">Contact Us</h4>
+                    <ul class="cb-footer-contact-list">
+                        <li class="cb-footer-contact-item">
+                            <svg class="cb-footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            <div>
+                                <strong>+92 300 1234567</strong>
+                                <div style="font-size:0.82rem; color:#94a3b8;">(Mon &ndash; Fri, 8:00 AM &ndash; 6:00 PM)</div>
+                            </div>
+                        </li>
+                        <li class="cb-footer-contact-item">
+                            <svg class="cb-footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <span>campusbites@ucp.edu.pk</span>
+                        </li>
+                        <li class="cb-footer-contact-item">
+                            <svg class="cb-footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <span>UCP, Lahore</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom Bar -->
+            <div class="cb-footer-bottom">
+                <p>&copy; 2026 Campus Bites. All rights reserved.</p>
+                <div class="cb-footer-social">
+                    <!-- Facebook -->
+                    <a href="#" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                        </svg>
+                    </a>
+                    <!-- Instagram -->
+                    <a href="#" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                        </svg>
+                    </a>
+                    <!-- X / Twitter -->
+                    <a href="#" aria-label="X Twitter">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4l11.733 16h4.267l-11.733 -16z"/>
+                            <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/>
+                        </svg>
+                    </a>
+                    <!-- YouTube -->
+                    <a href="#" aria-label="YouTube">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
+                            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>

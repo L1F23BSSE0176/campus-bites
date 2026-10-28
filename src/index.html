@@ -3,25 +3,299 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campus Bites | Home</title>
-    <!-- Linking shared CSS file -->
+    <title>Campus Bites | Home - University Cafeteria</title>
+    <!-- Google Fonts for Modern Typography & Handwritten Accent -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Shared CSS File -->
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Campus Bites</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="deals.html">Deals</a></li>
-                <li><a href="order.html">How to Order</a></li>
-                <li><a href="feedback.html">Feedback</a></li>
-            </ul>
-        </nav>
+
+    <!-- ===== UNIFIED HEADER & NAVBAR ===== -->
+    <header class="cb-header">
+        <div class="cb-header-inner">
+            <!-- Brand Logo -->
+            <a href="index.html" class="cb-logo">
+                <span class="cb-logo-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 0A5.11 5.11 0 0 1 16.59 6 4 4 0 0 1 18 13.87V21H6Z"/>
+                        <line x1="6" y1="17" x2="18" y2="17"/>
+                    </svg>
+                </span>
+                <span class="cb-logo-text">Campus <span class="cb-logo-accent">Bites</span></span>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="cb-nav">
+                <ul class="cb-nav-list">
+                    <li class="cb-nav-item"><a href="index.html" class="cb-nav-link active">Home</a></li>
+                    <li class="cb-nav-item"><a href="menu-Page.html" class="cb-nav-link">Menu</a></li>
+                    <li class="cb-nav-item"><a href="dealPage.html" class="cb-nav-link">Deals</a></li>
+                    <li class="cb-nav-item"><a href="order.html" class="cb-nav-link">How to Order</a></li>
+                    <li class="cb-nav-item"><a href="feedback.html" class="cb-nav-link">Feedback &amp; Contact</a></li>
+                    <li class="cb-nav-item"><a href="about-page.html" class="cb-nav-link">About Us</a></li>
+                </ul>
+            </nav>
+
+            <!-- Header Actions -->
+            <div class="cb-header-actions">
+                <a href="order.html" class="cb-cart-btn" aria-label="Cart">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="9" cy="21" r="1"/>
+                        <circle cx="20" cy="21" r="1"/>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                    </svg>
+                    <span class="cb-cart-count">0</span>
+                </a>
+                <a href="order.html" class="cb-order-btn">Order Now</a>
+            </div>
+        </div>
     </header>
-    <main>
-        <p>Main content for this page will be developed by the assigned member.</p>
-    </main>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="home-hero">
+        <div class="home-hero-container">
+            <div class="home-hero-content">
+                <span class="home-hero-badge">FRESH FOOD &bull; GREAT TASTE &bull; YOUR CAMPUS CAFETERIA</span>
+                <h1 class="home-hero-title">Campus <span>Bites</span></h1>
+                <p class="home-hero-sub">Good Food Fuels Great Ideas</p>
+                <p class="home-hero-desc">Fresh, delicious and affordable meals &mdash; right here at your university cafeteria.</p>
+                <div class="home-hero-actions">
+                    <a href="menu-Page.html" class="btn-primary">View Menu</a>
+                    <a href="order.html" class="btn-outline">Order Now</a>
+                </div>
+            </div>
+
+            <div class="home-hero-art">
+                <div class="eat-study-repeat-card">
+                    <span class="script-text eat">Eat</span>
+                    <span class="script-text study">Study</span>
+                    <span class="script-text repeat">Repeat</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== OUR SPECIALTIES SECTION ===== -->
+    <section class="home-specialties">
+        <div class="home-section-header">
+            <h2 class="home-section-title">Our Specialties</h2>
+            <p class="home-section-subtitle">From hearty meals to quick bites, we've got something for everyone.</p>
+        </div>
+
+        <div class="home-specialties-grid">
+            <!-- Specialty 1: Fresh Ingredients -->
+            <div class="specialty-card">
+                <div class="specialty-icon-circle">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+                        <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+                    </svg>
+                </div>
+                <h3>Fresh Ingredients</h3>
+                <p>Quality food, always</p>
+            </div>
+
+            <!-- Specialty 2: Affordable Prices -->
+            <div class="specialty-card">
+                <div class="specialty-icon-circle">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/>
+                        <line x1="7" y1="7" x2="7.01" y2="7"/>
+                    </svg>
+                </div>
+                <h3>Affordable Prices</h3>
+                <p>Great taste, less cost</p>
+            </div>
+
+            <!-- Specialty 3: Variety of Options -->
+            <div class="specialty-card">
+                <div class="specialty-icon-circle">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
+                        <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+                        <line x1="6" y1="1" x2="6" y2="4"/>
+                        <line x1="10" y1="1" x2="10" y2="4"/>
+                        <line x1="14" y1="1" x2="14" y2="4"/>
+                    </svg>
+                </div>
+                <h3>Variety of Options</h3>
+                <p>Veg &amp; Non-Veg</p>
+            </div>
+
+            <!-- Specialty 4: Clean & Hygienic -->
+            <div class="specialty-card">
+                <div class="specialty-icon-circle">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        <path d="m9 12 2 2 4-4"/>
+                    </svg>
+                </div>
+                <h3>Clean &amp; Hygienic</h3>
+                <p>Your health matters</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FEATURED FOOD SECTION ===== -->
+    <section class="home-featured">
+        <div class="home-section-header">
+            <h2 class="home-section-title">Featured Food</h2>
+            <p class="home-section-subtitle">Popular choices among students</p>
+        </div>
+
+        <div class="home-featured-grid">
+            <!-- Featured Item 1: Chicken Shawarma Roll -->
+            <div class="featured-card">
+                <div class="featured-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=600&h=380&fit=crop" alt="Chicken Shawarma Roll">
+                </div>
+                <div class="featured-card-body">
+                    <h3 class="featured-card-title">Chicken Shawarma Roll</h3>
+                    <p class="featured-card-price">PKR 250</p>
+                    <a href="order.html" class="featured-card-btn">Add to Cart</a>
+                </div>
+            </div>
+
+            <!-- Featured Item 2: Beef Burger -->
+            <div class="featured-card">
+                <div class="featured-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=600&h=380&fit=crop" alt="Beef Burger">
+                </div>
+                <div class="featured-card-body">
+                    <h3 class="featured-card-title">Beef Burger</h3>
+                    <p class="featured-card-price">PKR 300</p>
+                    <a href="order.html" class="featured-card-btn">Add to Cart</a>
+                </div>
+            </div>
+
+            <!-- Featured Item 3: Chicken Biryani -->
+            <div class="featured-card">
+                <div class="featured-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=600&h=380&fit=crop" alt="Chicken Biryani">
+                </div>
+                <div class="featured-card-body">
+                    <h3 class="featured-card-title">Chicken Biryani</h3>
+                    <p class="featured-card-price">PKR 280</p>
+                    <a href="order.html" class="featured-card-btn">Add to Cart</a>
+                </div>
+            </div>
+
+            <!-- Featured Item 4: French Fries -->
+            <div class="featured-card">
+                <div class="featured-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=600&h=380&fit=crop" alt="French Fries">
+                </div>
+                <div class="featured-card-body">
+                    <h3 class="featured-card-title">French Fries</h3>
+                    <p class="featured-card-price">PKR 150</p>
+                    <a href="order.html" class="featured-card-btn">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== UNIFIED FOOTER ===== -->
+    <footer class="cb-footer">
+        <div class="cb-footer-container">
+            <div class="cb-footer-top">
+                <!-- Col 1: Brand Info -->
+                <div class="cb-footer-col">
+                    <div class="cb-footer-brand-title">
+                        <span class="cb-logo-badge">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 0A5.11 5.11 0 0 1 16.59 6 4 4 0 0 1 18 13.87V21H6Z"/>
+                                <line x1="6" y1="17" x2="18" y2="17"/>
+                            </svg>
+                        </span>
+                        <span>Campus <span class="cb-logo-accent">Bites</span></span>
+                    </div>
+                    <p class="cb-footer-brand-p">Good Food Fuels Great Ideas</p>
+                    <p class="cb-footer-brand-sub">Fresh, delicious and affordable meals &mdash; right here at your university cafeteria.</p>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div class="cb-footer-col">
+                    <h4 class="cb-footer-heading">Quick Links</h4>
+                    <ul class="cb-footer-links-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu-Page.html">Menu</a></li>
+                        <li><a href="dealPage.html">Deals</a></li>
+                        <li><a href="order.html">How to Order</a></li>
+                        <li><a href="feedback.html">Feedback &amp; Contact</a></li>
+                        <li><a href="about-page.html">About Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Contact Us -->
+                <div class="cb-footer-col">
+                    <h4 class="cb-footer-heading">Contact Us</h4>
+                    <ul class="cb-footer-contact-list">
+                        <li class="cb-footer-contact-item">
+                            <svg class="cb-footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            <div>
+                                <strong>+92 300 1234567</strong>
+                                <div style="font-size:0.82rem; color:#94a3b8;">(Mon &ndash; Fri, 8:00 AM &ndash; 6:00 PM)</div>
+                            </div>
+                        </li>
+                        <li class="cb-footer-contact-item">
+                            <svg class="cb-footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <span>campusbites@ucp.edu.pk</span>
+                        </li>
+                        <li class="cb-footer-contact-item">
+                            <svg class="cb-footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <span>UCP, Lahore</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom Bar -->
+            <div class="cb-footer-bottom">
+                <p>&copy; 2026 Campus Bites. All rights reserved.</p>
+                <div class="cb-footer-social">
+                    <!-- Facebook -->
+                    <a href="#" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                        </svg>
+                    </a>
+                    <!-- Instagram -->
+                    <a href="#" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                        </svg>
+                    </a>
+                    <!-- X / Twitter -->
+                    <a href="#" aria-label="X Twitter">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4l11.733 16h4.267l-11.733 -16z"/>
+                            <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/>
+                        </svg>
+                    </a>
+                    <!-- YouTube -->
+                    <a href="#" aria-label="YouTube">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
+                            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
